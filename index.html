@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/1156b585b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="w-screen overflow-x-hidden">
+    <nav class="w-full fixed top-0 right-0 z-10">
+      <div
+        class="w-[90%] max-w-5xl py-3 mx-auto flex justify-between items-center lg:w-[85%] relative z-10"
+      >
+        <a href="#"> <img src="./images/logo.png" alt="logo" /> </a>
+        <ul
+          id="navMenu"
+          class="w-[50vw] h-screen bg-[#7c4fe0] flex flex-col fixed top-0 right-[-62vh] p-10 px-5 duration-500 sm:right-0 sm:flex-row sm:p-0 sm:sticky sm:h-auto sm:w-auto sm:bg-transparent z-100 translate-x-0"
+        >
+          <i
+            class="fa-solid text-white fa-xmark absolute top-6 right-7 cursor-pointer text-2xl"
+          ></i>
+          <li class="navLink"><a href="#"> Home </a></li>
+          <li class="navLink"><a href="#"> About </a></li>
+          <li class="navLink"><a href="#"> Pricing </a></li>
+          <li class="navLink"><a href="#"> Contact </a></li>
+        </ul>
+        <i class="fa-solid fa-bars text-white cursor-pointer text-2xl"></i>
+      </div>
+    </nav>
+    <main class="w-[85%] mx-auto opacity-[.99]">
+      <!-- hero section -->
+      <section
+        class="max-w-5xl mx-auto pt-24 flex flex-col gap-10 md:flex-row md:h-[100vh] md:items-center md:justify-between"
+      >
+        <div
+          class="w-[250px] h-[400px] rounded-2xl gradient-clr absolute top-[-100px] right-[-50px] rotate-[-30deg] z-0 md:h-[600px] md:w-[400px] md:top-[-200px] lg:w-[500px] xl:w-[600px] xl:h-[700px] xl:top-[-290px]"
+        ></div>
+        <div class="flex flex-col lg:basis-[65%] md:basis-[70%] z-10">
+          <h1
+            class="text-4xl font-semibold poppins text-[#222] leading-10 md:text-5xl md:leading-tight xl:text-6xl xl:leading-tight"
+          >
+            Creative way to Showcase your App
+          </h1>
+          <p class="mt-4 font-semibold lg:text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+            commodi, voluptate quaerat iure quidem expedita eos a blanditiis
+            sint modi est error veniam facere eum at doloribus amet, nobis ut.
+          </p>
+          <button class="btn">Get Started</button>
+        </div>
+        <div>
+          <img
+            class="w-[50%] mx-auto md:w-[70%] z-10 relative"
+            src="./images/thumb-1.png"
+            alt="banner image"
+          />
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // navbar toogle functionality>>>
+
+      const xIcon = document.querySelector(".fa-xmark");
+      const menuIcon = document.querySelector(".fa-bars");
+      const navMenu = document.querySelector("#navMenu");
+      const navLinks = document.querySelectorAll(".navLink");
+
+      xIcon.addEventListener("click", () => {
+        navMenu.classList.remove("showNav");
+      });
+      menuIcon.addEventListener("click", () => {
+        navMenu.classList.add("showNav");
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("showNav");
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<!-- site1 : https://themexriver.com/appilo-theme/appilo-seo -->
+<!-- site2: https://n.foxdsgn.com/karma/real-estate -->
+<!-- site3 : https://theme-land.com/sapp/demo/index-2.html -->
