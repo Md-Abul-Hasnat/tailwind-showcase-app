@@ -11,19 +11,24 @@
       src="https://kit.fontawesome.com/1156b585b5.js"
       crossorigin="anonymous"
     ></script>
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
-  <body class="w-screen overflow-x-hidden">
-    <nav class="w-full fixed top-0 right-0 z-10">
+  <body class="w-screen overflow-x-hidden poppins">
+    <nav id="navbar" class="w-full fixed top-0 right-0 z-10 duration-300">
       <div
         class="w-[90%] max-w-5xl py-3 mx-auto flex justify-between items-center lg:w-[85%] relative z-10"
       >
         <a href="#"> <img src="./images/logo.png" alt="logo" /> </a>
         <ul
           id="navMenu"
-          class="w-[50vw] h-screen bg-[#7c4fe0] flex flex-col fixed top-0 right-[-62vh] p-10 px-5 duration-500 sm:right-0 sm:flex-row sm:p-0 sm:sticky sm:h-auto sm:w-auto sm:bg-transparent z-100 translate-x-0"
+          class="w-[50vw] h-screen bg-gray-50 flex flex-col fixed top-0 right-[-62vh] p-10 px-5 duration-500 sm:right-0 sm:flex-row sm:p-0 sm:sticky sm:h-auto sm:w-auto sm:bg-transparent z-100 translate-x-0"
         >
           <i
-            class="fa-solid text-white fa-xmark absolute top-6 right-7 cursor-pointer text-2xl"
+            class="fa-solid text-[#7c4fe0] fa-xmark absolute top-6 right-7 cursor-pointer text-2xl"
           ></i>
           <li class="navLink"><a href="#"> Home </a></li>
           <li class="navLink"><a href="#"> About </a></li>
@@ -33,21 +38,21 @@
         <i class="fa-solid fa-bars text-white cursor-pointer text-2xl"></i>
       </div>
     </nav>
-    <main class="w-[85%] mx-auto opacity-[.99]">
+    <main class="w-[85%] max-w-5xl mx-auto opacity-[.99]">
       <!-- hero section -->
       <section
-        class="max-w-5xl mx-auto pt-24 flex flex-col gap-10 md:flex-row md:h-[100vh] md:items-center md:justify-between"
+        class="mx-auto pt-24 flex flex-col gap-10 md:flex-row md:h-[100vh] md:items-center md:justify-between"
       >
         <div
           class="w-[250px] h-[400px] rounded-2xl gradient-clr absolute top-[-100px] right-[-50px] rotate-[-30deg] z-0 md:h-[600px] md:w-[400px] md:top-[-200px] lg:w-[500px] xl:w-[600px] xl:h-[700px] xl:top-[-290px]"
         ></div>
         <div class="flex flex-col lg:basis-[65%] md:basis-[70%] z-10">
           <h1
-            class="text-4xl font-semibold poppins text-[#222] leading-10 md:text-5xl md:leading-tight xl:text-6xl xl:leading-tight"
+            class="text-4xl font-semibold text-[#222] leading-10 md:text-5xl md:leading-tight xl:text-6xl xl:leading-tight"
           >
             Creative way to Showcase your App
           </h1>
-          <p class="mt-4 font-semibold lg:text-lg">
+          <p class="mt-4 lg:leading-7">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
             commodi, voluptate quaerat iure quidem expedita eos a blanditiis
             sint modi est error veniam facere eum at doloribus amet, nobis ut.
@@ -62,6 +67,250 @@
           />
         </div>
       </section>
+
+      <!-- Features section -->
+      <section class="mt-16 md:mt-24">
+        <h1 class="heading">Explore Premium Features</h1>
+        <p class="subheading">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+          obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
+          asperiores sit.
+        </p>
+        <main
+          class="mt-8 text-center grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 lg:mt-[80px] lg:gap-y-5"
+        >
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-sliders icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Powerful Settings
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-fingerprint icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Fully functional
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Location Tracking
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-globe icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Multiple Language
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-hand-point-up icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Fully functional
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-window-restore icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Fully functional
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+        </main>
+      </section>
+
+      <!-- 3rd section -->
+      <section
+        class="mt-20 md:mt-24 flex flex-col-reverse gap-14 lg:flex-row lg:gap-0 lg:mt-44 items-center"
+      >
+        <div class="w-full flex justify-center">
+          <img
+            class="w-[45%] sm:w-[40%] md:w-[30%] lg:w-[200px] lg:h-[500px]"
+            src="./images/thumb-2.png"
+            alt="banner image"
+          />
+        </div>
+        <article class="lg:basis-[80%]">
+          <h1
+            class="text-2xl font-semibold mb-5 md:text-3xl xl:text-4xl xl:leading-tight"
+          >
+            Work faster with powerful tools.
+          </h1>
+          <div class="flex gap-3 items-center mb-4">
+            <i class="fa-solid fa-check text-[#7c4fe0] font-bold text-xl"></i>
+            <p>
+              Combined with a handful of model sentence structures looks
+              reasonable.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i class="fa-solid fa-check text-[#7c4fe0] font-bold text-xl"></i>
+            <p>
+              Combined with a handful of model sentence structures looks
+              reasonable.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i class="fa-solid fa-check text-[#7c4fe0] font-bold text-xl"></i>
+            <p>
+              Combined with a handful of model sentence structures looks
+              reasonable.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i class="fa-solid fa-check text-[#7c4fe0] font-bold text-xl"></i>
+            <p>
+              Combined with a handful of model sentence structures looks
+              reasonable.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i class="fa-solid fa-check text-[#7c4fe0] font-bold text-xl"></i>
+            <p>
+              Combined with a handful of model sentence structures looks
+              reasonable.
+            </p>
+          </div>
+
+          <div class="mt-7 flex gap-4">
+            <button class="shadow-lg py-2 px-4">
+              <i class="fa-solid fa-bell text-2xl text-[#7c4fe0]"></i>
+            </button>
+            <button class="shadow-lg py-2 px-4">
+              <i class="fa-solid fa-envelope text-2xl text-[#7c4fe0]"></i>
+            </button>
+            <button class="shadow-lg py-2 px-4">
+              <i class="fa-solid fa-video text-2xl text-[#7c4fe0]"></i>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!-- 4rth section -->
+      <section
+        class="mt-32 md:mt-24 flex flex-col-reverse gap-14 lg:flex-row-reverse lg:gap-0 lg:mt-44 items-center"
+      >
+        <div
+          class="w-full flex justify-center lg:justify-end xl:justify-center"
+        >
+          <img
+            class="w-[45%] sm:w-[40%] md:w-[30%] lg:w-[250px] lg:h-[500px]"
+            src="./images/thumb-3.png"
+            alt="banner image"
+          />
+        </div>
+        <article class="lg:basis-[80%]">
+          <h1
+            class="text-2xl font-semibold mb-5 md:text-3xl xl:text-4xl xl:leading-tight"
+          >
+            Share your photos with friends easily
+          </h1>
+          <div class="flex gap-4 items-center mb-4">
+            <i
+              class="fa-solid fa-layer-group text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl"
+            ></i>
+            <p>
+              Fully layered dolor sit amet, consectetur adipisicing elit.
+              Facere, nobis, id expedita dolores officiis laboriosam.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i
+              class="fa-solid fa-brush text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl"
+            ></i>
+            <p>
+              Customizable design dolor sit amet, consectetur adipisicing elit.
+              Facere, nobis, id expedita dolores officiis laboriosam.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i
+              class="fa-solid fa-droplet text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl"
+            ></i>
+            <p>
+              Drop ipsum dolor sit amet, consectetur adipisicing elit. Facere,
+              nobis, id expedita dolores officiis laboriosam.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i
+              class="fa-solid fa-cart-arrow-down text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl"
+            ></i>
+            <p>
+              Marketing chart dolor sit amet, consectetur adipisicing elit.
+              Facere, nobis, id expedita dolores officiis laboriosam.
+            </p>
+          </div>
+
+          <button class="btn">Learn More</button>
+        </article>
+      </section>
+
+      <!-- swiper section -->
+      <section class="mt-40">
+        <h1 class="heading">Simple & Beautiful Interface</h1>
+        <p class="subheading">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+          obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
+          asperiores sit.
+        </p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/1.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/2.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/4.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/5.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/1.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/2.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/4.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/5.jpg" alt="img" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="mt-40">
+        <h1>sas</h1>
+      </section>
     </main>
 
     <script>
@@ -70,6 +319,7 @@
       const xIcon = document.querySelector(".fa-xmark");
       const menuIcon = document.querySelector(".fa-bars");
       const navMenu = document.querySelector("#navMenu");
+      const navbar = document.querySelector("#navbar");
       const navLinks = document.querySelectorAll(".navLink");
 
       xIcon.addEventListener("click", () => {
@@ -83,6 +333,48 @@
         link.addEventListener("click", () => {
           navMenu.classList.remove("showNav");
         });
+      });
+
+      window.addEventListener("scroll", (e) => {
+        let scroll = this.scrollY;
+        if (scroll > 15) {
+          navbar.classList.add("bg-white");
+          menuIcon.classList.add("primaryText");
+          navbar.classList.add("shadow-lg");
+          navLinks.forEach((link) => link.classList.add("primaryText"));
+        } else {
+          navbar.classList.remove("bg-white");
+          navbar.classList.remove("shadow-lg");
+          menuIcon.classList.remove("primaryText");
+
+          navLinks.forEach((link) => link.classList.remove("primaryText"));
+        }
+      });
+    </script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        breakpoints: {
+          600: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          900: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+        slidesPerView: 2,
+        spaceBetween: 15,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2000,
+        },
+        speed: 1200,
       });
     </script>
   </body>

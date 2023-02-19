@@ -17,11 +17,52 @@
 }
 
 .navLink {
-  @apply text-white text-lg cursor-pointer font-semibold my-5 sm:m-0 sm:ml-10 text-left;
+  @apply text-[#6c3ad7]  text-base cursor-pointer font-semibold my-5 sm:m-0 sm:ml-10 text-left sm:text-white;
+}
+
+.primaryText {
+  @apply text-[#6c3ad7];
 }
 
 .btn {
   @apply w-fit gradient-clr py-2.5 px-6 mt-6 text-white font-semibold poppins rounded-md hover:text-green-500 duration-500;
+}
+
+.icon {
+  @apply text-6xl mb-5 text-[#565656];
+}
+
+.heading {
+  @apply underlineEffect text-3xl font-semibold text-center mb-4 text-[#222] md:text-4xl md:font-bold lg:text-5xl;
+}
+
+.subheading {
+  @apply text-center lg:text-lg lg:px-8 lg:mt-4;
+}
+
+.underlineEffect::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 80px;
+  height: 2px;
+  background-color: #7c4fe0;
+}
+html,
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  padding-bottom: 50px !important;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+.swiper-slide {
+  cursor: grab;
 }
 
 @media screen and (min-width: 550px) {
