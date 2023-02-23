@@ -21,7 +21,7 @@ body {
 }
 
 .navLink {
-  @apply text-[#6c3ad7]  text-base cursor-pointer font-semibold my-5 sm:m-0 sm:ml-10 text-left sm:text-white;
+  @apply text-[#6c3ad7]  text-base cursor-pointer font-semibold my-5 md:m-0 md:ml-8 md:text-xs text-left md:text-white lg:text-base;
 }
 
 .primaryText {
@@ -83,7 +83,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 720px) {
   .fa-xmark {
     display: none !important;
   }

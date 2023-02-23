@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,18 +22,21 @@
       <div
         class="w-[90%] max-w-5xl py-3 mx-auto flex justify-between items-center lg:w-[85%] relative z-10"
       >
-        <a href="#"> <img src="./images/logo.png" alt="logo" /> </a>
+        <a href="#">
+          <img class="w-10 lg:w-12" src="./images/logo.png" alt="logo" />
+        </a>
         <ul
           id="navMenu"
-          class="w-[50vw] h-screen bg-gray-50 flex flex-col fixed top-0 right-[-62vh] p-10 px-5 duration-500 sm:right-0 sm:flex-row sm:p-0 sm:sticky sm:h-auto sm:w-auto sm:bg-transparent z-100 translate-x-0"
+          class="w-[50vw] h-screen bg-gray-50 flex flex-col fixed top-0 right-[-62vh] p-10 px-5 duration-500 md:right-0 md:flex-row md:p-0 md:sticky md:h-auto md:w-auto md:bg-transparent z-100 translate-x-0"
         >
           <i
             class="fa-solid text-[#7c4fe0] fa-xmark absolute top-6 right-7 cursor-pointer text-2xl"
           ></i>
-          <li class="navLink"><a href="#"> Home </a></li>
-          <li class="navLink"><a href="#"> About </a></li>
-          <li class="navLink"><a href="#"> Pricing </a></li>
-          <li class="navLink"><a href="#"> Contact </a></li>
+          <li class="navLink"><a href="#home"> Home </a></li>
+          <li class="navLink"><a href="#features"> Features </a></li>
+          <li class="navLink"><a href="#preview"> Preview </a></li>
+          <li class="navLink"><a href="#pricing"> Pricing </a></li>
+          <li class="navLink"><a href="#contact"> Contact </a></li>
         </ul>
         <i class="fa-solid fa-bars text-white cursor-pointer text-2xl"></i>
       </div>
@@ -41,6 +44,7 @@
     <main class="w-[85%] max-w-5xl mx-auto opacity-[.99]">
       <!-- hero section -->
       <section
+        id="home"
         class="mx-auto pt-24 flex flex-col gap-10 md:flex-row md:h-[100vh] md:items-center md:justify-between"
       >
         <div
@@ -69,7 +73,7 @@
       </section>
 
       <!-- Features section -->
-      <section class="mt-16 md:mt-24">
+      <section id="features" class="mt-16 md:mt-24 scroll-mt-24">
         <h1 class="heading">Explore Premium Features</h1>
         <p class="subheading">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
@@ -270,7 +274,7 @@
       </section>
 
       <!-- swiper section -->
-      <section class="mt-40">
+      <section id="preview" class="mt-40 scroll-mt-24">
         <h1 class="heading">Simple & Beautiful Interface</h1>
         <p class="subheading">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
@@ -390,7 +394,7 @@
       </section>
 
       <!-- pricing section -->
-      <section class="mt-40">
+      <section id="pricing" class="mt-40 scroll-mt-24">
         <h1 class="heading">Unlock Full Power Of sApp</h1>
         <p class="subheading">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
@@ -420,7 +424,8 @@
           </article>
         </main>
         <p class="text-center mt-5 font-semibold">
-          Not sure what to choose? <a href="#" class="underline"> Contact Us</a>
+          Not sure what to choose?
+          <a href="#contact" class="underline"> Contact Us</a>
         </p>
       </section>
 
@@ -548,7 +553,7 @@
           commodi dicta modi aliquid deserunt, quis maiores nesciunt autem,
           aperiam natus.
         </p>
-        <div class="flex gap-5 mb-5">
+        <div class="flex flex-col gap-5 mb-5 sm:flex-row">
           <img
             class="cursor-pointer"
             src="./images/google-play-black.png"
@@ -567,7 +572,7 @@
     </section>
 
     <!-- contact section -->
-    <section class="w-[85%] mx-auto mt-40">
+    <section id="contact" class="w-[85%] mx-auto mt-40 scroll-mt-24">
       <h1 class="heading">Stay Tuned</h1>
       <p class="subheading lg:px-24">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
