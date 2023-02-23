@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>sApp</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/1156b585b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="w-screen overflow-x-hidden poppins">
+    <nav id="navbar" class="w-full fixed top-0 right-0 z-10 duration-700">
+      <div
+        class="w-[90%] max-w-5xl py-3 mx-auto flex justify-between items-center lg:w-[85%] relative z-10"
+      >
+        <a href="#"> <img src="./images/logo.png" alt="logo" /> </a>
+        <ul
+          id="navMenu"
+          class="w-[50vw] h-screen bg-gray-50 flex flex-col fixed top-0 right-[-62vh] p-10 px-5 duration-500 sm:right-0 sm:flex-row sm:p-0 sm:sticky sm:h-auto sm:w-auto sm:bg-transparent z-100 translate-x-0"
+        >
+          <i
+            class="fa-solid text-[#7c4fe0] fa-xmark absolute top-6 right-7 cursor-pointer text-2xl"
+          ></i>
+          <li class="navLink"><a href="#"> Home </a></li>
+          <li class="navLink"><a href="#"> About </a></li>
+          <li class="navLink"><a href="#"> Pricing </a></li>
+          <li class="navLink"><a href="#"> Contact </a></li>
+        </ul>
+        <i class="fa-solid fa-bars text-white cursor-pointer text-2xl"></i>
+      </div>
+    </nav>
+    <main class="w-[85%] max-w-5xl mx-auto opacity-[.99]">
+      <!-- hero section -->
+      <section
+        class="mx-auto pt-24 flex flex-col gap-10 md:flex-row md:h-[100vh] md:items-center md:justify-between"
+      >
+        <div
+          class="w-[250px] h-[400px] rounded-2xl gradient-clr absolute top-[-100px] right-[-50px] rotate-[-30deg] z-0 md:h-[600px] md:w-[400px] md:top-[-200px] lg:w-[500px] xl:w-[600px] xl:h-[700px] xl:top-[-290px]"
+        ></div>
+        <div class="flex flex-col lg:basis-[65%] md:basis-[70%] z-10">
+          <h1
+            class="text-4xl font-semibold text-[#222] leading-10 md:text-5xl md:leading-tight xl:text-6xl xl:leading-tight"
+          >
+            Creative way to Showcase your App
+          </h1>
+          <p class="mt-4 lg:leading-7">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+            commodi, voluptate quaerat iure quidem expedita eos a blanditiis
+            sint modi est error veniam facere eum at doloribus amet, nobis ut.
+          </p>
+          <button class="btn">Get Started</button>
+        </div>
+        <div>
+          <img
+            class="w-[50%] mx-auto md:w-[70%] z-10 relative"
+            src="./images/thumb-1.png"
+            alt="banner image"
+          />
+        </div>
+      </section>
+
+      <!-- Features section -->
+      <section class="mt-16 md:mt-24">
+        <h1 class="heading">Explore Premium Features</h1>
+        <p class="subheading">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+          obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
+          asperiores sit.
+        </p>
+        <main
+          class="mt-8 text-center grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 lg:mt-[80px] lg:gap-y-5"
+        >
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-sliders icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Powerful Settings
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-fingerprint icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Fully functional
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Location Tracking
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-globe icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Multiple Language
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-hand-point-up icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Fully functional
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+          <article class="py-5 px-4">
+            <i class="fa-solid fa-window-restore icon"></i>
+            <h2 class="text-2xl font-semibold mb-4 text-[#222] md:font-bold">
+              Fully functional
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis culpa expedita dignissimos.
+            </p>
+          </article>
+        </main>
+      </section>
+
+      <!-- 3rd section -->
+      <section
+        class="mt-20 md:mt-24 flex flex-col-reverse gap-14 lg:flex-row lg:gap-0 lg:mt-44 items-center"
+      >
+        <div class="w-full flex justify-center">
+          <img
+            class="w-[45%] sm:w-[40%] md:w-[30%] lg:w-[200px] lg:h-[500px]"
+            src="./images/thumb-2.png"
+            alt="banner image"
+          />
+        </div>
+        <article class="lg:basis-[80%]">
+          <h1
+            class="text-2xl font-semibold mb-5 md:text-3xl xl:text-4xl xl:leading-tight"
+          >
+            Work faster with powerful tools.
+          </h1>
+          <div class="flex gap-3 items-center mb-4">
+            <i class="fa-solid fa-check text-[#7c4fe0] font-bold text-xl"></i>
+            <p>
+              Combined with a handful of model sentence structures looks
+              reasonable.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i class="fa-solid fa-check text-[#7c4fe0] font-bold text-xl"></i>
+            <p>
+              Combined with a handful of model sentence structures looks
+              reasonable.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i class="fa-solid fa-check text-[#7c4fe0] font-bold text-xl"></i>
+            <p>
+              Combined with a handful of model sentence structures looks
+              reasonable.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i class="fa-solid fa-check text-[#7c4fe0] font-bold text-xl"></i>
+            <p>
+              Combined with a handful of model sentence structures looks
+              reasonable.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i class="fa-solid fa-check text-[#7c4fe0] font-bold text-xl"></i>
+            <p>
+              Combined with a handful of model sentence structures looks
+              reasonable.
+            </p>
+          </div>
+
+          <div class="mt-7 flex gap-4">
+            <button class="shadow-lg py-2 px-4">
+              <i class="fa-solid fa-bell text-2xl text-[#7c4fe0]"></i>
+            </button>
+            <button class="shadow-lg py-2 px-4">
+              <i class="fa-solid fa-envelope text-2xl text-[#7c4fe0]"></i>
+            </button>
+            <button class="shadow-lg py-2 px-4">
+              <i class="fa-solid fa-video text-2xl text-[#7c4fe0]"></i>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!-- 4rth section -->
+      <section
+        class="mt-32 md:mt-24 flex flex-col-reverse gap-14 lg:flex-row-reverse lg:gap-0 lg:mt-44 items-center"
+      >
+        <div
+          class="w-full flex justify-center lg:justify-end xl:justify-center"
+        >
+          <img
+            class="w-[45%] sm:w-[40%] md:w-[30%] lg:w-[250px] lg:h-[500px]"
+            src="./images/thumb-3.png"
+            alt="banner image"
+          />
+        </div>
+        <article class="lg:basis-[80%]">
+          <h1
+            class="text-2xl font-semibold mb-5 md:text-3xl xl:text-4xl xl:leading-tight"
+          >
+            Share your photos with friends easily
+          </h1>
+          <div class="flex gap-4 items-center mb-4">
+            <i
+              class="fa-solid fa-layer-group text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl"
+            ></i>
+            <p>
+              Fully layered dolor sit amet, consectetur adipisicing elit.
+              Facere, nobis, id expedita dolores officiis laboriosam.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i
+              class="fa-solid fa-brush text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl"
+            ></i>
+            <p>
+              Customizable design dolor sit amet, consectetur adipisicing elit.
+              Facere, nobis, id expedita dolores officiis laboriosam.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i
+              class="fa-solid fa-droplet text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl"
+            ></i>
+            <p>
+              Drop ipsum dolor sit amet, consectetur adipisicing elit. Facere,
+              nobis, id expedita dolores officiis laboriosam.
+            </p>
+          </div>
+          <div class="flex gap-3 items-center mb-4">
+            <i
+              class="fa-solid fa-cart-arrow-down text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl"
+            ></i>
+            <p>
+              Marketing chart dolor sit amet, consectetur adipisicing elit.
+              Facere, nobis, id expedita dolores officiis laboriosam.
+            </p>
+          </div>
+
+          <button class="btn">Learn More</button>
+        </article>
+      </section>
+
+      <!-- swiper section -->
+      <section class="mt-40">
+        <h1 class="heading">Simple & Beautiful Interface</h1>
+        <p class="subheading">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+          obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
+          asperiores sit.
+        </p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/1.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/2.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/4.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/5.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/1.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/2.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/4.jpg" alt="img" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-[100%] h-[100%]" src="./images/5.jpg" alt="img" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- feedback section -->
+      <section class="mt-40">
+        <div class="swiper feedbackSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-center mt-8">
+              <div class="w-full">
+                <img
+                  class="w-[90px] h-[90px] mx-auto rounded-full mb-5"
+                  src="./images/avatar-1.png"
+                  alt="img"
+                />
+              </div>
+              <h2 class="text-lg font-bold">John Doe</h2>
+              <h4 class="mb-1">Los Angeles, California</h4>
+              <div class="mb-4">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-regular fa-star text-orange-500"></i>
+              </div>
+              <p class="md:px-20 xl:px-36 xl:leading-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+                rem sunt nulla ducimus expedita, incidunt laborum assumenda.
+                Deleniti iste placeat nostrum incidunt rem laudantium, sapiente,
+                cum, molestias unde, quidem labore.
+              </p>
+            </div>
+            <div class="swiper-slide text-center mt-8">
+              <div class="w-full">
+                <img
+                  class="w-[90px] h-[90px] mx-auto rounded-full mb-5"
+                  src="./images/avatar-3.png"
+                  alt="img"
+                />
+              </div>
+              <h2 class="text-lg font-bold">Johnson Smith</h2>
+              <h4 class="mb-1">Los Angeles, California</h4>
+              <div class="mb-4">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-solid fa-star text-orange-500"></i>
+              </div>
+              <p class="md:px-20 xl:px-36 xl:leading-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+                rem sunt nulla ducimus expedita, incidunt laborum assumenda.
+                Deleniti iste placeat nostrum incidunt rem laudantium, sapiente,
+                cum, molestias unde, quidem labore.
+              </p>
+            </div>
+            <div class="swiper-slide text-center mt-8">
+              <div class="w-full">
+                <img
+                  class="w-[90px] h-[90px] mx-auto rounded-full mb-5"
+                  src="./images/avatar-1.png"
+                  alt="img"
+                />
+              </div>
+              <h2 class="text-lg font-bold">John Doe</h2>
+              <h4 class="mb-1">Los Angeles, California</h4>
+              <div class="mb-4">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <i class="fa-regular fa-star text-orange-500"></i>
+              </div>
+              <p class="md:px-20 xl:px-36 xl:leading-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+                rem sunt nulla ducimus expedita, incidunt laborum assumenda.
+                Deleniti iste placeat nostrum incidunt rem laudantium, sapiente,
+                cum, molestias unde, quidem labore.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- pricing section -->
+      <section class="mt-40">
+        <h1 class="heading">Unlock Full Power Of sApp</h1>
+        <p class="subheading">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+          obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
+          asperiores sit.
+        </p>
+        <main class="w-full grid grid-cols-1 gap-5 mt-24 md:grid-cols-2">
+          <article class="text-center py-8 shadow-2xl">
+            <i class="fa-solid fa-bicycle text-5xl primaryText"></i>
+            <h2 class="text-2xl mt-2 uppercase">Basic</h2>
+            <h1 class="text-4xl my-3 primaryText font-bold">$10</h1>
+            <p class="my-4 text-lg border-t pt-3">5GB Linux Web Space</p>
+            <p class="my-4 text-lg border-t pt-3">5 MySQL Databases</p>
+            <p class="my-4 text-lg border-t pt-3">24/7 Tech Support</p>
+            <p class="my-4 text-lg border-y py-3">Daily Backups</p>
+            <button class="btn">Sign up</button>
+          </article>
+          <article class="text-center py-8 shadow-2xl">
+            <i class="fa-solid fa-motorcycle text-5xl primaryText"></i>
+            <h2 class="text-2xl mt-2 uppercase">PRO</h2>
+            <h1 class="text-4xl my-3 primaryText font-bold">$129</h1>
+            <p class="my-4 text-lg border-t pt-3">10GB Linux Web Space</p>
+            <p class="my-4 text-lg border-t pt-3">50 MySQL Databases</p>
+            <p class="my-4 text-lg border-t pt-3">24/7 Tech Support</p>
+            <p class="my-4 text-lg border-y py-3">Daily Backups</p>
+            <button class="btn">Sign up</button>
+          </article>
+        </main>
+        <p class="text-center mt-5 font-semibold">
+          Not sure what to choose? <a href="#" class="underline"> Contact Us</a>
+        </p>
+      </section>
+
+      <!-- FAQ section -->
+      <section class="mt-40">
+        <h1 class="heading">Have Questions? Look Here</h1>
+        <p class="subheading">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+          obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
+          asperiores sit.
+        </p>
+        <main class="mt-20 mx-auto max-w-2xl">
+          <article
+            class="faq mt-5 border-b border-gray-400 pb-4 cursor-pointer"
+          >
+            <div
+              class="question mt-2 mb-2 flex justify-between items-center pr-2"
+            >
+              <h2 class="font-semibold">How to install sApp?</h2>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="answer max-h-0 overflow-y-hidden duration-700">
+              <p class="leading-8">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laborum obcaecati dignissimos quae quo ad iste ipsum officiis
+                deleniti asperiores sit. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste
+                ipsum officiis deleniti asperiores sit.
+              </p>
+            </div>
+          </article>
+          <article
+            class="faq mt-5 border-b border-gray-400 pb-4 cursor-pointer"
+          >
+            <div
+              class="question mt-2 mb-2 flex justify-between items-center pr-2"
+            >
+              <h2 class="font-semibold">Can i get support from the author??</h2>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="answer max-h-0 overflow-y-hidden duration-700">
+              <p class="leading-8">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laborum obcaecati dignissimos quae quo ad iste ipsum officiis
+                deleniti asperiores sit. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Laborum obcaecati dignissimos quae quo ad.
+              </p>
+            </div>
+          </article>
+          <article
+            class="faq mt-5 border-b border-gray-400 pb-4 cursor-pointer"
+          >
+            <div
+              class="question mt-2 mb-2 flex justify-between items-center pr-2"
+            >
+              <h2 class="font-semibold">Do you have a free trial?</h2>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="answer max-h-0 overflow-y-hidden duration-700">
+              <p class="leading-8">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laborum obcaecati dignissimos quae quo ad iste ipsum officiis
+                deleniti asperiores sit. Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </article>
+          <article
+            class="faq mt-5 border-b border-gray-400 pb-4 cursor-pointer"
+          >
+            <div
+              class="question mt-2 mb-2 flex justify-between items-center pr-2"
+            >
+              <h2 class="font-semibold">
+                How can i edit my personal information?
+              </h2>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="answer max-h-0 overflow-y-hidden duration-700">
+              <p class="leading-8">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laborum obcaecati dignissimos quae quo ad iste ipsum officiis
+                deleniti asperiores sit. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste
+                ipsum officiis deleniti asperiores sit.
+              </p>
+            </div>
+          </article>
+          <article
+            class="faq mt-5 border-b border-gray-400 pb-4 cursor-pointer"
+          >
+            <div
+              class="question mt-2 mb-2 flex justify-between items-center pr-2"
+            >
+              <h2 class="font-semibold">Is it available world wide?</h2>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="answer max-h-0 overflow-y-hidden duration-700">
+              <p class="leading-8">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laborum obcaecati dignissimos quae quo ad iste ipsum officiis
+                deleniti asperiores sit.
+              </p>
+            </div>
+          </article>
+        </main>
+      </section>
+    </main>
+
+    <!-- download section -->
+    <section class="w-[100vw] h-[80vh] mt-40 relative">
+      <div class="w-full h-full gradient-clr absolute top-0 left-0"></div>
+
+      <div
+        class="h-full px-10 relative flex flex-col justify-center items-center z-1 lg:px-32 xl:px-44"
+      >
+        <h1 class="text-white text-center text-3xl font-bold mb-5 lg:text-4xl">
+          sApp is available for all devices
+        </h1>
+        <p
+          class="text-sm text-gray-200 leading-6 text-center mb-7 lg:text-base"
+        >
+          sApp is available for all devices, consectetur adipisicing elit.
+          Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem quod
+          neque eos totam. Delectus quae animi tenetur voluptates doloribus
+          commodi dicta modi aliquid deserunt, quis maiores nesciunt autem,
+          aperiam natus.
+        </p>
+        <div class="flex gap-5 mb-5">
+          <img
+            class="cursor-pointer"
+            src="./images/google-play-black.png"
+            alt="img"
+          />
+          <img
+            class="cursor-pointer"
+            src="./images/app-store-black.png"
+            alt="img"
+          />
+        </div>
+        <p class="text-gray-200">
+          * Available on iPhone, iPad and all Android devices
+        </p>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="w-[85%] mx-auto mt-40">
+      <h1 class="heading">Stay Tuned</h1>
+      <p class="subheading lg:px-24">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+        obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
+        asperiores sit.
+      </p>
+      <main class="flex flex-col gap-5 lg:flex-row lg:mt-10">
+        <article class="mt-10 basis-[50%]">
+          <p class="text-gray-500">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old.
+          </p>
+          <div class="mt-8 flex items-center gap-3">
+            <i
+              class="fa-solid fa-house bg-[#7c4fe0] text-white py-3 px-3 rounded-md"
+            ></i>
+            <p class="text-gray-500">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+            </p>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <i
+              class="fa-solid fa-phone bg-[#7c4fe0] text-white py-3 px-3 rounded-md"
+            ></i>
+            <p class="text-gray-500">+123 456 789</p>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <i
+              class="fa-solid fa-envelope bg-[#7c4fe0] text-white py-3 px-3 rounded-md"
+            ></i>
+            <p class="text-gray-500">example@gmail.com</p>
+          </div>
+        </article>
+        <article class="mt-5 flex flex-col gap-4 basis-[50%]">
+          <input
+            class="drop-shadow-lg py-3 pl-3 outline-none"
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            class="drop-shadow-lg py-3 pl-3 outline-none"
+            type="text"
+            placeholder="Email"
+          />
+          <textarea
+            class="w-full h-52 drop-shadow-lg py-3 pl-3 outline-none"
+            placeholder="Message"
+          ></textarea>
+          <button class="btn flex items-center gap-3">
+            <i class="fa-solid fa-paper-plane"></i>
+            <p>Send Message</p>
+          </button>
+        </article>
+      </main>
+    </section>
+
+    <!-- footer -->
+    <footer class="w-full mt-40 pt-10 border-t border-gray-300">
+      <main
+        class="w-[90%] mx-auto grid grid-cols-1 gap-10 place-content-center sm:grid-cols-2 xl:grid-cols-4"
+      >
+        <article>
+          <a href="#"> <img src="./images/logo.png" alt="logo" /> </a>
+          <p class="mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non,
+            fugit totam vel laboriosam vitae.
+          </p>
+          <div class="mt-5 flex gap-5">
+            <i
+              class="fa-brands fa-facebook-f text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-twitter text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-google-plus-g text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin-in text-[#7c4fe0] font-bold text-xl py-2 px-3 shadow-xl cursor-pointer"
+            ></i>
+          </div>
+        </article>
+        <article>
+          <h2 class="text-2xl font-semibold">Useful Links</h2>
+          <div class="flex flex-col gap-3 mt-4">
+            <a href="#"> Home </a>
+            <a href="#"> About Us </a>
+            <a href="#"> Services </a>
+            <a href="#"> Price </a>
+            <a href="#"> Contact </a>
+          </div>
+        </article>
+        <article>
+          <h2 class="text-2xl font-semibold">Product Help</h2>
+          <div class="flex flex-col gap-3 mt-4">
+            <a href="#"> FAQ </a>
+            <a href="#"> Privacy Policy</a>
+            <a href="#"> Support </a>
+            <a href="#"> Terms & Conditions </a>
+            <a href="#"> Contact </a>
+          </div>
+        </article>
+        <article>
+          <h2 class="text-2xl font-semibold">Download</h2>
+          <div class="mt-6 flex gap-4 items-center sm:flex-col sm:items-start">
+            <img
+              class="w-[150px] h-[55px] cursor-pointer"
+              src="./images/google-play-black.png"
+              alt="img"
+            />
+            <img
+              class="w-[150px] h-[60px]cursor-pointer"
+              src="./images/app-store-black.png"
+              alt="img"
+            />
+          </div>
+        </article>
+      </main>
+      <div
+        class="mt-8 border-t border-gray-300 px-[5%] py-4 flex flex-col gap-3 text-center justify-between md:flex-row"
+      >
+        <small class="text-sm text-gray-500"
+          >© Copyrights 2022 sApp All rights reserved.</small
+        >
+        <small class="text-sm text-gray-500"
+          >Made with love By webdev Hasnat</small
+        >
+      </div>
+    </footer>
+
+    <!-- script start here -->
+    <script>
+      // navbar toogle functionality>>>
+
+      const xIcon = document.querySelector(".fa-xmark");
+      const menuIcon = document.querySelector(".fa-bars");
+      const navMenu = document.querySelector("#navMenu");
+      const navbar = document.querySelector("#navbar");
+      const navLinks = document.querySelectorAll(".navLink");
+
+      xIcon.addEventListener("click", () => {
+        navMenu.classList.remove("showNav");
+      });
+      menuIcon.addEventListener("click", () => {
+        navMenu.classList.add("showNav");
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("showNav");
+        });
+      });
+
+      window.addEventListener("scroll", (e) => {
+        let scroll = this.scrollY;
+        if (scroll > 15) {
+          navbar.classList.add("bg-white");
+          menuIcon.classList.add("primaryText");
+          navbar.classList.add("shadow-lg");
+          navLinks.forEach((link) => link.classList.add("primaryText"));
+        } else {
+          navbar.classList.remove("bg-white");
+          navbar.classList.remove("shadow-lg");
+          menuIcon.classList.remove("primaryText");
+
+          navLinks.forEach((link) => link.classList.remove("primaryText"));
+        }
+      });
+
+      // faq functionality
+      const faq = document.querySelectorAll(".faq");
+      faq.forEach((div) =>
+        div.addEventListener("click", () => {
+          div.classList.toggle("faqActive");
+        })
+      );
+    </script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        breakpoints: {
+          600: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          900: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+        slidesPerView: 2,
+        spaceBetween: 15,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2000,
+        },
+        speed: 1200,
+      });
+
+      // feedback swiper config
+      var swiper = new Swiper(".feedbackSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
